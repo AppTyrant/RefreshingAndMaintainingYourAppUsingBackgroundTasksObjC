@@ -7,3 +7,7 @@ Use scheduled background tasks for refreshing your app content and for performin
 - Note: This sample code project is an Objective-C port of the associated with WWDC 2019 session [707: Advances in App Background Execution](https://developer.apple.com/videos/play/wwdc19/707/).
 
 This sample code project must be run on a physical device.
+
+<hr>
+
+Developer Website: [AppTyrant.com](https://www.apptyrant.com)
