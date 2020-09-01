@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14903" systemVersion="19A582a" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="FeedEntry" representedClassName="FeedEntry" syncable="YES" codeGenerationType="class">
+        <attribute name="firstColor" attributeType="Transformable" valueTransformerName="ColorTransformer" customClassName="Color"/>
+        <attribute name="gradientDirection" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="secondColor" attributeType="Transformable" valueTransformerName="ColorTransformer" customClassName="Color"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <elements>
+        <element name="FeedEntry" positionX="-63" positionY="-18" width="128" height="103"/>
+    </elements>
+</model>
