@@ -54,7 +54,27 @@
     // Called as the scene transitions from the foreground to the background.
     // Use this method to save data, release shared resources, and store enough scene-specific state information
     // to restore the scene back to its current state.
+    if (!self.doesAppHaveForegroundedScene)
+    {
+        AppDelegate *appDelegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+        [appDelegate scheduleAllBackgroundTasks];
+    }
 }
 
+-(BOOL)doesAppHaveForegroundedScene
+{
+    BOOL hasForegroundScene = NO;
+    NSSet <UIScene*>*connectedSceneds = [UIApplication sharedApplication].connectedScenes;
+    for (UIScene *aScene in connectedSceneds)
+    {
+        if (aScene.activationState == UISceneActivationStateForegroundActive
+            || aScene.activationState == UISceneActivationStateForegroundInactive)
+        {
+            hasForegroundScene = YES;
+            break;
+        }
+    }
+    return hasForegroundScene;
+}
 
 @end
